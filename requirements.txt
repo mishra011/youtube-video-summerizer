@@ -1,0 +1,5 @@
+streamlit
+ollama
+pytube
+youtube-transcript-api
+langchain
