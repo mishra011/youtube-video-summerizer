@@ -48,7 +48,7 @@ def summarize_with_langchain_and_openai(transcript, language_code, model_name='l
              {'role': 'user', 'content': prompt}
         ],
     )
-    print(response)
+    #print(response)
     
     return response['message']['content']
 
@@ -70,7 +70,7 @@ def main():
 
                 status_text.text(f'Creating summary...')
                 progress.progress(75)
-                
+
                 model_name = "llama3"
                 summary = summarize_with_langchain_and_openai(transcript, language_code, model_name)
 
